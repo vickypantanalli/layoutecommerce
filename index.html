@@ -15,16 +15,16 @@
 
         .container {
             width: 80%;
-            min-height: 500px;
+            max-width: 900px;
+            min-height: 50vh;
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: 40px 600px 30px;
-            grid-gap: 5px;
-            border: none;
+            
             grid-template-areas:
             "n n n n n n n n n n n n"
-            "a a a m m m m m m m m m"
+            "a a m m m m m m m m m m"
             "f f f f f f f f f f f f";
         }
 
@@ -56,7 +56,7 @@
         .card {
             width: 30%;
             height: 49%;
-
+            
         }
 
         .img {
