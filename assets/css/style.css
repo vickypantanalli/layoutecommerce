@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 470px 30px;
+    grid-template-areas:
+    "n n n n n n n n n n n n"
+    "a a m m m m m m m m m m"
+    "f f f f f f f f f f f f";
+}
+
+.b {
+    border: 2px solid #f3f5f1;
+}
+
+.navbar {
+    grid-area: n;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.main {
+    grid-area: m;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 49% 49%;
+    column-gap: 5px;
+    row-gap: 10px;
+    background-color: #f3f5f1;
+    padding: 5px 5px;
+}
+
+.asidebar {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f5f1;
+    text-align: left;
+    padding-left: 1em;
+    font-size: .7rem;
+    padding-top: .5em;
+}
+
+.asidebar p {
+    padding: 0.2em 0;
+}
+
+h4 {
+    font-size: .9rem;
+}
+
+.gris {
+    color: gray;
+}
+
+.navbar, button {
+    background-color: rgb(85, 85, 132);
+}
+
+.navbar, .footer {
+    font-size: 0.8rem;
+}
+
+.footer {
+    grid-area: f;
+    text-align:center;
+    padding-top: 0.6em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.img {
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 5em;
+}
+
+.uno {
+    background-image: url("../img/1.jpg");
+}
+
+.dos {
+    background-image: url("../img/2.jpg");
+}
+
+.tres {
+    background-image: url("../img/3.jpg");
+}
+
+.cuatro {
+    background-image: url("../img/4.jpg");
+}
+
+.precio {
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5em;
+}
+
+button {
+    width: 100%;
+    color: white;
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+button:hover {
+    background-color: rgb(113, 113, 173);
+    color: white;
+    transition: 400ms;
+}
+
+
+

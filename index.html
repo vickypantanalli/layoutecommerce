@@ -1,121 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
-    <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .container {
-            width: 80%;
-            max-width: 900px;
-            min-height: 50vh;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 40px 600px 30px;
-            
-            grid-template-areas:
-            "n n n n n n n n n n n n"
-            "a a m m m m m m m m m m"
-            "f f f f f f f f f f f f";
-        }
-
-        .b {
-            border: 1px solid black;
-        }
-
-        .navbar {
-            grid-area: n;
-        }
-
-        .main {
-            grid-area: m;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 3px;
-        }
-
-        .asidebar {
-            grid-area: a;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .footer {
-            grid-area: f;
-        }
-
-        .card {
-            width: 30%;
-            height: 49%;
-            
-        }
-
-        .img {
-            background-image: url("http://placekitten.com/200/300");
-            height: 75%;
-            background-position: center;
-            background-size: cover;
-            padding-bottom: 5em;
-        }
-
-        .precio {
-            font-size: 0.8rem;
-            margin-top: 0.5em;
-        }
-
-        .info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: .5em;
-            
-        }
-
-        button {
-            width: 100%;
-            background-color:blue;
-            color: white;
-            margin-top: 0.5em;
-        }
-
-    </style>
 </head>
 <body>
     <div class="container b">
         <div class="navbar b">Mi Ecommerce</div>
         <div class="asidebar b">
             <h4>Categorías</h4>
-            <p>Perfumes(13)</p>
-            <p>Ropa (21)</p>
-            <p>Accesorios (41)</p>
-            <p>Zapatos (10)</p>
+            <br>
+            <p>Perfumes <span class="gris">(13)</span></p>
+            <p>Ropa <span class="gris">(21)</span></p>
+            <p>Accesorios <span class="gris">(41)</span></p>
+            <p>Zapatos <span class="gris">(10)</span></p>
         </div>
-        <div class="main b">
-            <div class="card b">
-                <div class="img">
-                </div>
-            <div class="info">
+
+        <div class="main ">
+            <div class="card">
+                <div class="img uno"></div>
+                <div class="info">
                 <h5>Perfume myKingdom</h5>
                 <p class="precio">31.400</p>
-                <button>comprar</button>
+                <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img dos"></div>
+                <div class="info">
+                <h5>Perfume Phantom</h5>
+                <p class="precio">68.900</p>
+                <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img tres"></div>
+                <div class="info">
+                <h5>Zapatos Docker</h5>
+                <p class="precio">29.700</p>
+                <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img cuatro"></div>
+                <div class="info">
+                <h5>Polerón Puma</h5>
+                <p class="precio">44.700</p>
+                <button>Comprar</button>
+                </div>
             </div>
         </div>
-            <div class="card b"></div>
-            <div class="card b"></div>
-            <div class="card b"></div>
-
-        </div>
-
-        <div class="footer">Footer</div>
+        <div class="footer">@miecommerce</div>
     </div>
 </body>
 </html>
